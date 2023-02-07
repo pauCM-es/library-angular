@@ -1,12 +1,16 @@
-<nav>
-  <div class="nav-logo"></div>
-  <div class="nav-item">
-    <p>HOME</p>
-  </div>
-  <div class="nav-item">
-    <p>MY COLLECTION</p>
-  </div>
-  <div class="nav-item">
-    <p>SEARCH BOOK</p>
-  </div>
+<nav class="nav">
+  <section class="nav-title" routerLink="">
+    <div class="nav-logo" >
+      <img class="nav-logo__img" src="../../../assets/images/book.png" alt="logo">
+    </div>
+    <h1>BLIBRERIA</h1>
+  </section>
+  <section class="nav-list">
+    <div class="nav-item">
+      <a routerLink="/books" routerLinkActive="nav-item--active">MY COLLECTION</a>
+    </div>
+    <div class="nav-item">
+      <a routerLink="/search" routerLinkActive="nav-item--active">SEARCH BOOK</a>
+    </div>
+  </section>
 </nav>
