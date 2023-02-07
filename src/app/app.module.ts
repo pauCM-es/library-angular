@@ -8,6 +8,10 @@ import { BookDetailsComponent } from './components/book-details/book-details.com
 import { CollectionComponent } from './components/collection/collection.component';
 import { NavigatorComponent } from './shared/navigator/navigator.component';
 import { NewBookComponent } from './components/new-book/new-book.component';
+import { CatalogeService } from './shared/cataloge.service';
+import { ApiService } from './shared/api.service';
+import { HttpClientModule } from '@angular/common/http'
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -20,9 +24,14 @@ import { NewBookComponent } from './components/new-book/new-book.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    FormsModule
   ],
-  providers: [],
+  providers: [
+    CatalogeService,
+    ApiService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

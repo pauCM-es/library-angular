@@ -4,6 +4,13 @@ import { Injectable } from '@angular/core';
   providedIn: 'root'
 })
 export class CatalogeService {
+  
+  allBooks:any = {
+    myCollection: [],
+    bestSellers: []
+  }
 
-  constructor() { }
+  constructor(private catalogeService: CatalogeService) { }
+
+
 }
